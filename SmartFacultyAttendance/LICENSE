@@ -1,0 +1,13 @@
+LICENSE PLACEHOLDER - NO LICENCE HAS BEEN CHOSEN YET
+
+Copyright (c) <YEAR> <COPYRIGHT HOLDER>. All rights reserved.
+
+Until the copyright holder replaces this file with a real open-source licence, nobody else has
+permission to use, copy, modify or distribute this code, even though the repository may be public.
+
+See the "License" section of README.md for a plain-language comparison of common choices
+(MIT, Apache-2.0, GPL-3.0) so that you can pick one deliberately, then replace this file with
+the official text of that licence from https://choosealicense.com/ or https://spdx.org/licenses/.
+
+Third-party components keep their own licences (AndroidX, Material Components, CameraX, ML Kit,
+LiteRT, Room). Any face-recognition model you add has its own, separate licence.

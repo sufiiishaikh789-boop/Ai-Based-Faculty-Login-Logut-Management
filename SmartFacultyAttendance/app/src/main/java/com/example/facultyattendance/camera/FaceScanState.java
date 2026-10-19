@@ -1,0 +1,8 @@
+package com.example.facultyattendance.camera;
+
+/** UI-visible states of the scanning screen. */
+public enum FaceScanState {
+    INITIALIZING, PERMISSION_REQUIRED, LOCATING_CAMPUS, CAMPUS_REJECTED, NOT_READY,
+    SCANNING, BLINK_REQUIRED, VERIFYING, NO_FACE, MULTIPLE_FACES, LOW_QUALITY, MISMATCH, AMBIGUOUS,
+    NO_ENROLLED_FACES, ENROLLING, SUCCESS, DUPLICATE, ERROR
+}

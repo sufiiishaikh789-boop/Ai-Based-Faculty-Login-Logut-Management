@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/Text.App.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/admin_home_title" />
+
+        <TextView
+            android:id="@+id/adminSummary"
+            style="@style/Text.App.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFaculty"
+            style="@style/Widget.App.PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/admin_faculty" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpenSessions"
+            style="@style/Widget.App.SecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/admin_open_sessions" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHistory"
+            style="@style/Widget.App.SecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/admin_history" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAudit"
+            style="@style/Widget.App.SecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/admin_audit" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfig"
+            style="@style/Widget.App.SecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/admin_config" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSettings"
+            style="@style/Widget.App.SecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/admin_settings" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSignOut"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minHeight="48dp"
+            android:text="@string/admin_sign_out" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Faculty Attendance: portfolio card</title>
+<style>
+/* Standalone preview chrome only. Delete these two rules when pasting the card into your site. */
+body { margin: 0; padding: 32px 16px; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #f8f6fc; }
+@media (prefers-color-scheme: dark) { body { background: #121016; } }
+
+.sfa-card {
+  --sfa-ink: #1b1b1f;
+  --sfa-muted: #5a5663;
+  --sfa-paper: #ffffff;
+  --sfa-wash: #f3eefb;
+  --sfa-line: #ddd3ee;
+  --sfa-brand: #4a148c;
+  --sfa-signal: #7c4dff;
+  --sfa-lilac: #e1d0ff;
+  --sfa-stage: #2e0b5b;
+  box-sizing: border-box;
+  display: grid;
+  gap: 0;
+  max-width: 880px;
+  margin: 0 auto;
+  background: var(--sfa-paper);
+  color: var(--sfa-ink);
+  border: 1px solid var(--sfa-line);
+  border-radius: 20px;
+  overflow: hidden;
+  font-family: inherit;
+  line-height: 1.55;
+}
+@media (prefers-color-scheme: dark) {
+  .sfa-card:not([data-theme="light"]) {
+    --sfa-ink: #ece8f2; --sfa-muted: #b8b2c4; --sfa-paper: #1f1b26;
+    --sfa-wash: #2a2434; --sfa-line: #3a3544; --sfa-brand: #d0bcff; --sfa-stage: #1d0838;
+  }
+}
+.sfa-card[data-theme="dark"] {
+  --sfa-ink: #ece8f2; --sfa-muted: #b8b2c4; --sfa-paper: #1f1b26;
+  --sfa-wash: #2a2434; --sfa-line: #3a3544; --sfa-brand: #d0bcff; --sfa-stage: #1d0838;
+}
+.sfa-card *, .sfa-card *::before, .sfa-card *::after { box-sizing: inherit; }
+
+/* Screenshot slot: the one expressive element. Replace .sfa-phone with a real <img>. */
+.sfa-shot { margin: 0; padding: 28px 20px 18px; background: linear-gradient(160deg, var(--sfa-stage), #5b2a9c); display: grid; justify-items: center; gap: 12px; }
+.sfa-phone { position: relative; width: 190px; aspect-ratio: 9 / 19; border-radius: 28px; border: 3px solid rgba(255,255,255,.55); background: rgba(10,6,18,.55); overflow: hidden; }
+.sfa-shot img { display: block; width: 190px; max-width: 100%; height: auto; border-radius: 28px; }
+.sfa-oval { position: absolute; left: 50%; top: 40%; width: 62%; aspect-ratio: 3 / 4; transform: translate(-50%, -50%); border: 3px solid var(--sfa-lilac); border-radius: 50%; box-shadow: 0 0 0 100vmax rgba(10,6,18,.45); clip-path: inset(-100vmax); }
+.sfa-scan { position: absolute; left: 19%; right: 19%; top: 24%; height: 2px; background: var(--sfa-lilac); opacity: .9; }
+@media (prefers-reduced-motion: no-preference) {
+  .sfa-scan { animation: sfa-sweep 2.4s ease-in-out infinite alternate; }
+  @keyframes sfa-sweep { from { top: 24%; } to { top: 56%; } }
+}
+.sfa-shot figcaption { margin: 0; max-width: 24ch; text-align: center; font-size: .78rem; color: #e1d0ff; }
+
+.sfa-body { padding: 26px 24px 24px; display: grid; gap: 16px; align-content: start; }
+.sfa-title { margin: 0; font-size: clamp(1.4rem, 2.6vw, 1.8rem); line-height: 1.15; letter-spacing: -.01em; color: var(--sfa-brand); }
+.sfa-desc { margin: 0; max-width: 60ch; color: var(--sfa-ink); }
+.sfa-caps { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; max-width: 62ch; }
+.sfa-caps li { padding-left: 14px; border-left: 3px solid var(--sfa-signal); color: var(--sfa-muted); font-size: .94rem; }
+.sfa-caps strong { color: var(--sfa-ink); font-weight: 650; }
+.sfa-stack { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+.sfa-stack li { padding: 3px 10px; border-radius: 999px; background: var(--sfa-wash); border: 1px solid var(--sfa-line); font-size: .8rem; }
+.sfa-status { margin: 0; font-size: .85rem; color: var(--sfa-muted); }
+.sfa-links { margin: 4px 0 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.sfa-link { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 12px; font-weight: 600; text-decoration: none; border: 2px solid var(--sfa-brand); color: var(--sfa-brand); }
+.sfa-link--primary { background: var(--sfa-brand); color: var(--sfa-paper); }
+.sfa-link:hover { filter: brightness(1.08); }
+.sfa-link:focus-visible { outline: 3px solid var(--sfa-signal); outline-offset: 3px; }
+.sfa-link[hidden] { display: none; }
+
+@media (min-width: 720px) {
+  .sfa-card { grid-template-columns: 250px 1fr; }
+  .sfa-shot { align-content: center; }
+}
+</style>
+</head>
+<body>
+<article class="sfa-card" aria-labelledby="sfa-title">
+  <figure class="sfa-shot">
+    <!--
+      SCREENSHOT PLACEHOLDER
+      Replace the whole <div class="sfa-phone">...</div> block with your real screenshot, e.g.
+        <img src="images/smart-attendance-verify.png" width="190" height="400"
+             alt="Face verification screen with an oval alignment guide and a status card">
+      Use a portrait phone screenshot (about 1080 x 2280). Keep the alt text accurate.
+    -->
+    <div class="sfa-phone" role="img" aria-label="Placeholder for an app screenshot: face verification screen">
+      <div class="sfa-oval"></div>
+      <div class="sfa-scan"></div>
+    </div>
+    <figcaption>Placeholder. Replace with a real screenshot of the app.</figcaption>
+  </figure>
+
+  <div class="sfa-body">
+    <h3 class="sfa-title" id="sfa-title">Smart Faculty Attendance</h3>
+    <p class="sfa-desc">An Android app that records faculty login and logout automatically after a face check and a campus-location check, working fully offline.</p>
+    <ul class="sfa-caps">
+        <li><strong>Face matching on the device.</strong> Camera frames are analysed locally and compared with an enrolled template. Raw images are not stored and nothing is sent over a network.</li>
+        <li><strong>Campus eligibility.</strong> Trusted Wi-Fi first; a 10 m GPS radius with an accuracy requirement as the fallback. Missing configuration fails safely.</li>
+        <li><strong>Configurable attendance rule.</strong> Login, duplicate-scan window (default 15 minutes), then logout, enforced inside one database transaction.</li>
+        <li><strong>Administration.</strong> Faculty enrolment, open-session corrections with an audit trail, CSV export and diagnostics behind a separate admin sign-in.</li>
+    </ul>
+    <ul class="sfa-stack" aria-label="Technology stack">
+        <li>Java 17</li>
+        <li>Android XML + Material 3</li>
+        <li>CameraX</li>
+        <li>ML Kit face detection</li>
+        <li>LiteRT embeddings (model supplied separately)</li>
+        <li>Room</li>
+        <li>Android Keystore</li>
+        <li>Gradle 9 / AGP 9.1</li>
+    </ul>
+    <!-- Edit this line as the project progresses. Do not claim features or results you have not verified. -->
+    <p class="sfa-status">Status: in development. Core attendance and campus-policy logic is unit-tested; device behaviour and the recognition model are still to be validated.</p>
+    <p class="sfa-links">
+      <!-- REPLACE href with your real repository URL once it is published. -->
+      <a class="sfa-link sfa-link--primary" href="#" data-placeholder="github-url">Source code on GitHub</a>
+      <!-- OPTIONAL: remove the hidden attribute and set href only if you host a real demo (for example a screen recording). -->
+      <a class="sfa-link" href="#" data-placeholder="live-demo-url" hidden>Live demo</a>
+    </p>
+  </div>
+</article>
+</body>
+</html>

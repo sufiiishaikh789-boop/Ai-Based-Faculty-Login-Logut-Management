@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SmartFaculty" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/on_brand_primary</item>
+        <item name="colorPrimaryContainer">@color/brand_container</item>
+        <item name="colorOnPrimaryContainer">@color/on_brand_container</item>
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorError">@color/state_error</item>
+        <item name="android:colorBackground">@color/surface_bg</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <style name="Widget.App.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">3dp</item>
+        <item name="cardBackgroundColor">@color/surface_card</item>
+    </style>
+
+    <style name="Widget.App.Badge" parent="">
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/badge_text_dark</item>
+        <item name="android:background">@drawable/bg_badge_neutral</item>
+    </style>
+
+    <style name="Widget.App.PrimaryButton" parent="Widget.Material3.Button">
+        <item name="android:minHeight">52dp</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+    <style name="Widget.App.SecondaryButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">52dp</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+    <style name="Text.App.Title" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.App.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="Text.App.Section" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Faculty Attendance</string>
+    <string name="brand_name">Lego</string>
+    <string name="tagline">Forwarding With Lego.</string>
+    <string name="cd_logo">Application logo</string>
+    <string name="cd_face_guide">Face alignment guide. Position your face inside the oval.</string>
+
+    <string name="verify_title">Face verification</string>
+    <string name="verify_admin">Admin</string>
+    <string name="btn_try_again">Try again</string>
+    <string name="btn_grant_permission">Grant permission</string>
+    <string name="demo_banner">DEMO MODE - NOT REAL IDENTITY VERIFICATION</string>
+    <string name="enroll_title">Enrol face</string>
+
+    <string name="dashboard_welcome">Welcome,</string>
+    <string name="dashboard_current_session">Current session</string>
+    <string name="dashboard_today">Today</string>
+    <string name="dashboard_recent">Recent attendance</string>
+    <string name="btn_done">Done</string>
+    <string name="empty_recent">No attendance recorded yet.</string>
+
+    <string name="history_title">Attendance history</string>
+    <string name="hint_search">Search by faculty UID or name</string>
+    <string name="btn_export_csv">Export CSV</string>
+    <string name="btn_from_date">From date</string>
+    <string name="btn_to_date">To date</string>
+    <string name="btn_clear_dates">Clear dates</string>
+    <string name="chip_all">All</string>
+    <string name="chip_open">Open sessions</string>
+    <string name="chip_completed">Completed</string>
+    <string name="empty_history">No records match these filters.</string>
+
+    <string name="admin_login_title">Administrator sign-in</string>
+    <string name="admin_setup_title">Create administrator password</string>
+    <string name="admin_setup_hint">There is no default password. Choose one with at least 10 characters. It is stored only as a salted hash on this device. If it is lost, the only reset is clearing the app data, which also deletes all attendance records.</string>
+    <string name="admin_login_hint">Enter the administrator password to manage faculty, review attendance and change configuration.</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm password</string>
+    <string name="btn_sign_in">Sign in</string>
+    <string name="btn_create_password">Create password</string>
+    <string name="btn_back">Back</string>
+    <string name="admin_home_title">Administration</string>
+    <string name="admin_faculty">Faculty and enrolment</string>
+    <string name="admin_open_sessions">Open sessions (corrections)</string>
+    <string name="admin_history">Attendance history and export</string>
+    <string name="admin_audit">Audit history</string>
+    <string name="admin_config">Configuration and validation</string>
+    <string name="admin_settings">Settings and diagnostics</string>
+    <string name="admin_sign_out">Sign out</string>
+
+    <string name="faculty_list_title">Faculty</string>
+    <string name="btn_add_faculty">Add faculty member</string>
+    <string name="open_sessions_title">Open sessions</string>
+    <string name="open_sessions_hint">Tap a session to close it. You choose the logout time, give a reason, and the change is written to the audit history.</string>
+    <string name="audit_title">Audit history</string>
+    <string name="empty_list">Nothing to show yet.</string>
+
+    <string name="faculty_edit_title">Faculty profile</string>
+    <string name="hint_uid">Faculty UID</string>
+    <string name="hint_name">Full name</string>
+    <string name="hint_department">Department</string>
+    <string name="switch_active">Profile is active</string>
+    <string name="btn_save">Save profile</string>
+    <string name="btn_enroll_face">Enrol face</string>
+    <string name="btn_remove_template">Remove face template</string>
+
+    <string name="config_title">Configuration</string>
+    <string name="btn_save_config">Save configuration</string>
+    <string name="btn_use_gps_center">Use current GPS fix as campus centre</string>
+
+    <string name="settings_title">Settings and diagnostics</string>
+    <string name="switch_demo">Enable DEMO mode (debug builds only)</string>
+    <string name="btn_refresh">Refresh</string>
+    <string name="btn_reset_demo">Reset demo data</string>
+    <string name="btn_erase_templates">Erase ALL face templates</string>
+</resources>

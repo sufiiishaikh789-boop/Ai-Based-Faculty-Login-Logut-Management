@@ -1,0 +1,41 @@
+# Every version below was checked against the official release pages on 2026-10-18.
+# See docs/BUILD_AND_VERSIONS.md for the sources and the compatibility reasoning.
+[versions]
+agp = "9.1.1"                 # Android Studio Panda 3 supports AGP 7.0-9.1; API 37 needs 9.1.1+
+androidxCore = "1.19.1"       # 1.19.x requires compileSdk 37
+appcompat = "1.8.0"
+activity = "1.13.0"
+constraintlayout = "2.2.2"
+recyclerview = "1.4.0"
+material = "1.14.0"           # Views-based Material (maintenance mode, still supported)
+room = "2.8.5"                # Java-compatible Room 2.x line
+camerax = "1.6.2"
+mlkitFaceDetection = "16.1.7" # face DETECTION only (not recognition)
+litert = "1.4.2"              # LiteRT v1 line = classic Interpreter API
+junit = "4.13.2"
+androidxTestExtJunit = "1.3.0"   # not re-verified in this session (instrumentation tests only)
+androidxTestRunner = "1.7.0"     # not re-verified in this session (instrumentation tests only)
+androidxTestCore = "1.7.0"       # not re-verified in this session (instrumentation tests only)
+
+[libraries]
+androidx-core = { group = "androidx.core", name = "core", version.ref = "androidxCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+androidx-camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "camerax" }
+androidx-camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "camerax" }
+androidx-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "camerax" }
+androidx-camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "camerax" }
+mlkit-face-detection = { group = "com.google.mlkit", name = "face-detection", version.ref = "mlkitFaceDetection" }
+litert = { group = "com.google.ai.edge.litert", name = "litert", version.ref = "litert" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxTestExtJunit" }
+androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "androidxTestRunner" }
+androidx-test-core = { group = "androidx.test", name = "core", version.ref = "androidxTestCore" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }

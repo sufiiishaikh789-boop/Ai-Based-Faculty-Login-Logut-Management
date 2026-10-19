@@ -1,0 +1,55 @@
+# Build output
+*.iml
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+
+# Local machine configuration (SDK paths, signing)
+local.properties
+keystore.properties
+signing.properties
+*.jks
+*.keystore
+*.pem
+*.p12
+
+# IDE
+.idea/
+!.idea/codeStyles/
+!.idea/runConfigurations/
+.vscode/
+*.swp
+.DS_Store
+
+# Backend / cloud credentials (none are used by this project; keep it that way)
+google-services.json
+GoogleService-Info.plist
+.env
+.env.*
+secrets.properties
+
+# Sensitive or personal data must never be committed
+*.db
+*.db-shm
+*.db-wal
+*.csv
+test-faces/
+enrolment-samples/
+calibration-data/
+
+# Recognition model: commit ONLY if its licence explicitly allows redistribution (see docs/MODEL_SETUP.md)
+app/src/main/assets/models/*.tflite
+app/src/main/assets/models/*.task
+
+# Kept on purpose (Room schema history is needed for migrations):
+!app/schemas/

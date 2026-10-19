@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_header_gradient"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <ImageView
+        android:id="@+id/logoMark"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/cd_logo"
+        android:src="@drawable/ic_logo_mark" />
+
+    <TextView
+        android:id="@+id/brandName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/brand_name"
+        android:textAppearance="@style/TextAppearance.Material3.DisplaySmall"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/tagline"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="#E1D0FF" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textColor="#CFC0EA" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/splashProgress"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:indeterminate="true"
+        app:indicatorColor="@color/white"
+        app:trackColor="#44FFFFFF"
+        app:trackCornerRadius="4dp" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_primary">#D0BCFF</color>
+    <color name="on_brand_primary">#381E72</color>
+    <color name="brand_container">#4F378B</color>
+    <color name="on_brand_container">#EADDFF</color>
+    <color name="brand_secondary">#CCC2DC</color>
+    <color name="gradient_start">#1D0838</color>
+    <color name="gradient_end">#4A2A82</color>
+
+    <color name="surface_bg">#121016</color>
+    <color name="surface_card">#1F1B26</color>
+    <color name="text_primary">#ECE8F2</color>
+    <color name="text_secondary">#B8B2C4</color>
+    <color name="divider">#3A3544</color>
+    <color name="scrim_dark">#CC0A0612</color>
+
+    <color name="state_ok">#6DD58C</color>
+    <color name="state_warn">#FFB95C</color>
+    <color name="state_error">#FFB4AB</color>
+    <color name="state_info">#B69DFF</color>
+
+    <color name="badge_ok_bg">#1E3B2A</color>
+    <color name="badge_warn_bg">#47340F</color>
+    <color name="badge_error_bg">#4A1F1B</color>
+    <color name="badge_neutral_bg">#34294A</color>
+    <color name="badge_text_dark">#ECE8F2</color>
+</resources>
